@@ -1,0 +1,16 @@
+{
+  "app": {
+    "title": "SmartLearnAI",
+    "subtitle": "Intelligent Learning Assistant"
+  },
+  "chat": {
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "loading": "Preparing response...",
+    "error": "An error occurred. Please try again.",
+    "welcome": "Hi! I'm SmartLearnAI — your learning assistant. What would you like to study?"
+  },
+  "header": {
+    "clearChat": "Clear chat"
+  }
+}
