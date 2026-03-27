@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createChatCompletion } from '@/lib/ai'
 
 export async function POST(req: NextRequest) {
+  console.log('KEY:', process.env.GROQ_API_KEY?.slice(0, 8))
   try {
     const { messages } = await req.json()
 

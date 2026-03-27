@@ -84,10 +84,11 @@ export function Sidebar({
                 <MessageSquare className="h-4 w-4 shrink-0" />
                 <span className="flex-1 truncate">{chat.title}</span>
                 <button
-                  onClick={(e) => {
+                    onClick={(e) => {
                     e.stopPropagation()
                     onDeleteChat(chat.id)
                   }}
+                  aria-label="Удалить чат"
                   className="opacity-0 group-hover:opacity-100 transition-opacity"
                 >
                   <Trash2 className="h-3 w-3 text-muted-foreground hover:text-destructive" />
@@ -101,6 +102,7 @@ export function Sidebar({
       {/* Collapse Button */}
       <button
         onClick={() => setCollapsed(!collapsed)}
+        aria-label={collapsed ? 'Развернуть сайдбар' : 'Свернуть сайдбар'}
         className="absolute -right-3 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full border bg-background flex items-center justify-center shadow-sm hover:bg-muted transition-colors z-10"
       >
         {collapsed

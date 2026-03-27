@@ -29,10 +29,11 @@ export default function Home() {
           />
 
           <ChatWindow
-            messages={messages}
-            isLoading={isLoading}
-            welcomeMessage={t('chat.welcome')}
-          />
+  messages={messages}
+  isLoading={isLoading}
+  welcomeMessage={t('chat.welcome')}
+  onSuggestionClick={sendMessage}
+/>
 
           {error && (
             <div className="text-center text-sm text-destructive px-4 pb-2">
